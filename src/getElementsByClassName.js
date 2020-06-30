@@ -18,16 +18,10 @@ var getElementsByClassName = function(className, node
 
   if (element.childNodes) {
     element.childNodes.forEach (function (childNode) {
-      // console.log(childNode)
       results = results.concat(getElementsByClassName(className, childNode));
-      // element.removeChild(childNode);
     })
   }
-
-  // console.log(results)
   return results;
-
-
 };
 
 
